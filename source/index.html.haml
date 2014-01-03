@@ -1,0 +1,121 @@
+!!!
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]><!
+%html.no-js{lang: 'de'}
+  / <![endif]
+  %head
+    %meta{charset: 'utf-8'}/
+    / Set the viewport width to device width for mobile
+    %meta{content: 'width=device-width', name: 'viewport'}/
+    %title Willkommen bei den aktiven Senioren Sempach
+
+    = stylesheet_link_tag 'normalize'
+    = stylesheet_link_tag 'senioren-sempach'
+
+    %script{src: 'scripts/custom.modernizr.js'}
+
+  %body
+    .row
+      .large-12.columns
+        %h1
+          %img{alt: 'vergissmeinnicht', src: '/images/vergissmeinnicht.png'}/
+      /
+        div class="large-9 columns">
+        <ul class="right button-group">
+        <li><a href="#" class="button">Link 1</a></li>
+        <li><a href="#" class="button">Link 2</a></li>
+        <li><a href="#" class="button">Link 3</a></li>
+        <li><a href="#" class="button">Link 4</a></li>
+        </u>
+        </div
+    / End Header and Nav
+    / First Band (Slider)
+    /
+      .row
+        .large-12.columns
+          %ul{"data-orbit" => ""}
+            %li
+              %img{src: "http://placehold.it/1000x400&text=[ img 1 ]"}/
+            %li
+              %img{src: "http://placehold.it/1000x400&text=[ img 2 ]"}/
+            %li
+              %img{src: "http://placehold.it/1000x400&text=[ img 3 ]"}/
+            %li
+              %img{src: "http://placehold.it/1000x400&text=[ img 4 ]"}/
+          %hr/
+    / Three-up Content Blocks
+    .row
+      .large-4.columns
+        %img{alt: 'essen', src: '/images/essen.jpg'}/
+        %h4 WER sind wir?
+        %ul.disc
+          %li Lose Gruppierung zur Förderung von Kontakten und Aktivitäten für Sempacherinnen und Sempacher im Alter 60+
+          %li Kein Verein
+      .large-4.columns
+        %img{alt: 'tanzen', src: '/images/tanzen.jpg'}/
+        %h4 WAS bieten wir an?
+        %ul.disc
+          %li Senioren-Mittagessen
+          %li Turnen
+          %li Volkstanz
+          %li Kegeln
+          %li Jassen
+          %li Singen
+          %li Schwimmen/Aquafitness
+          %li Wandern
+          %li Indoor Rowing (Ruder-Ergometer)
+          %li Jahres-Ausflug
+      .large-4.columns
+        %img{alt: 'fitness', src: '/images/fitness.jpg'}/
+        %h4 WIE sind wir organisiert?
+        %ul.disc
+          %li Da wir kein Verein sind, kassieren wir keinen Mitglieder-Beitrag
+          %li Je nach Anlass wird ein individueller Betrag erhoben
+          %li Das Monatsprogramm erscheint monatlich in der SempacherWoche und wird an verschiedenen Orten in Sempach ausgehängt
+          %li Beachten Sie auch unsern Info-Kasten am Müliplatz
+    / Call to Action Panel
+    .row
+      .large-12.columns
+        .panel
+          .row
+            .large-4.columns
+              %h4 Haben wir Ihr Interesse geweckt?
+            .large-4.columns
+              %ul.vcard
+                %li.fn Doris Furrer
+                %li.tel 041 460 10 41
+                %li.email
+                  %a{href: 'mailto:drfurrer@bluewin.ch'} drfurrer@bluewin.ch
+            .large-4.columns
+              %ul.vcard
+                %li.fn Vreni Bisel
+                %li.tel 041 460 14 531
+    /
+      Footer
+      
+      <footer class="row">
+      <div class="large-12 columns">
+      <hr />
+      <div class="row">
+      <div class="large-6 columns">
+      <p>&copy; Copyright no one at all. Go to town.</p>
+      </div>
+      <div class="large-6 columns">
+      <ul class="inline-list right">
+      <li><a href="#">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+      </ul>
+      </div>
+      </div>
+      </div>
+      </footer>
+
+    %script{src: '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'}
+    %script{src: '//use.typekit.net/fqy8ayc.js', type: 'text/javascript'}
+    :javascript
+      try{Typekit.load();}catch(e){}
+    = javascript_include_tag 'main'
+
+    / End Footer
