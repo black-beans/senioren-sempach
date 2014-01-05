@@ -5,14 +5,14 @@
   / <![endif]
   %head
     %meta{charset: 'utf-8'}/
-    / Set the viewport width to device width for mobile
     %meta{content: 'width=device-width', name: 'viewport'}/
     %title Willkommen bei den aktiven Senioren Sempach
 
-    = stylesheet_link_tag 'normalize'
-    = stylesheet_link_tag 'senioren-sempach'
+    = stylesheet_link_tag 'application'
 
-    %script{src: 'scripts/custom.modernizr.js'}
+    %script{src: '//use.typekit.net/fqy8ayc.js', type: 'text/javascript'}
+    :javascript
+      try{Typekit.load();}catch(e){}
 
   %body
     .row
@@ -113,9 +113,5 @@
       </footer>
 
     %script{src: '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'}
-    %script{src: '//use.typekit.net/fqy8ayc.js', type: 'text/javascript'}
-    :javascript
-      try{Typekit.load();}catch(e){}
-    = javascript_include_tag 'main'
 
-    / End Footer
+    = javascript_include_tag 'application'
