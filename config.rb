@@ -90,6 +90,6 @@ configure :build do
 end
 
 activate :s3_sync do |s3_sync|
-  s3_sync.bucket = 'www.senioren-sempach.ch'
+  s3_sync.bucket = 'www.aktive-senioren-sempach.ch'
   s3_sync.region = 'eu-west-1'
 end
